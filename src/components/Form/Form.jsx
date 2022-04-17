@@ -14,11 +14,7 @@ const initialValues = {
   number: '',
 };
 
-export class NameField extends React.Component {
-  state = {
-    contacts: [],
-  };
-
+export class ContactForm extends React.Component {
   handleSubmit = (values, { resetForm }) => {
     const { name, number } = values;
     const newContact = {

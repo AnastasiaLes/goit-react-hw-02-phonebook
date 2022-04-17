@@ -1,5 +1,5 @@
 import React from 'react';
-import { NameField } from '../Form/Form';
+import { ContactForm } from '../Form/Form';
 import { ContactList } from '../ContactList/ContactList';
 import { FilterField } from '../Filter/filter';
 
@@ -46,8 +46,8 @@ export class PhoneBook extends React.Component {
     return (
       <div>
         <h1>Phonebook</h1>
-        <NameField
-          value={this.state.filter}
+        <ContactForm
+          // value={this.state.filter}
           onSubmit={this.formSubmitHandler}
         />
         <FilterField onChange={this.ChangeFilter} />
